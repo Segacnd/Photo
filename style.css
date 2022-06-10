@@ -1,0 +1,243 @@
+body, html {
+    background-color: whitesmoke;
+    font-family: 'Tiro Gurmukhi', serif;
+    height: 100%;
+    
+}
+
+.bodyWrap
+{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.header-content {
+    text-align: center;
+    
+    
+    font-family: inherit;
+    font-size: 24px;
+    margin-top: 30px;
+    
+}
+
+.header-content__header-text{
+    color: rgb(56, 52, 52);
+}
+
+.main {
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+    row-gap: 20px;
+    column-gap: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    flex: 1, 1, auto;
+}
+
+.jija {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.wrapBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f5c9a;
+    box-sizing: border-box;
+    max-width: 30%;
+    padding: 10px 10px;
+    border-radius: 10px;
+
+}
+.wrapBox button {
+    background-color: white;
+    color: black;
+    border: 2px solid black; 
+    border-radius: 12px;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 12px;
+
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.wrapBox button:hover {
+    background-color: rgb(39, 35, 35); /* Green */
+    color: white;
+}
+
+
+.imgBox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 100px;  
+    max-height: auto;
+}
+
+.main p {
+    text-align: center;
+    width: 50%;
+
+    /* flex-grow: ; */
+    margin: 0; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fileButton
+{
+    max-width: 100px;
+}
+
+.input__file-button
+{
+    width: 0.1px;
+    height: 0.1px;
+
+}
+
+
+.label
+{
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    background-color: rgb(8, 138, 174);
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.label:active {
+    background-color: rgb(8, 138, 174);
+    box-shadow: 0 5px #666;
+    transform: translateY(3px);
+  }
+
+.header-content__input-img
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+#text
+{
+    font-family: inherit;
+    padding: 1.25rm;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    border-color: rgb(8, 138, 174);
+}
+#text:hover
+{
+
+    border-color: rgb(127, 177, 191);
+}
+
+#text:focus
+{
+
+    border-color: rgb(31, 206, 255);
+
+}
+
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(8, 138, 174);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    width: 90px;
+
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: inherit;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .button:active {
+    background-color: rgb(8, 138, 174);
+    box-shadow: 0 5px #666;
+    transform: translateY(3px);
+  }
+
+
+.footer-text
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #1f5c9a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+  .footerWrap
+  {
+    list-style: none;
+  }
+
+  .footerWrap li img
+  {
+    float: left;
+    width: 40px;
+
+  }
+
+.footerWrap{
+    display: flex;
+    justify-content: center;
+}
