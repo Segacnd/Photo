@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./nullStyle.css">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./formStyle.css">
+    <link rel="stylesheet" href="./button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi:ital@1&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" class="header lock-padding">
+        <h1>Your Photo Galelry</h1>
+        <button class="header__phone popup__link">+</button>
+    </header>
+    <main class="main">
+
+    </main>
+    <footer>
+        Onli icons and link about me here
+    </footer>
+    <div class="popup" id="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup">X</a>
+                <div class="wrap">
+                    <div class="popup__title">
+                        <h3>
+                            Please, write the text and download image
+                        </h3>
+                    </div>
+                    <div class="popup_form">
+                        <form class="header-content__input-img" id="form">
+                            <div class="wrapFormData">
+                                <input type="text" placeholder="enter the name for photo" name="title" id="text"
+                                    autocomplete="off">
+                                <div class="fileButton">
+                                    <input type="file" name="file" id="file" class="input__file-button" />
+                                    <label for="file" class="label">Add Photo</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="button" style="vertical-align:middle">
+                                <span>Submit</span></button>
+                        </form>
+                    </div>
+                </div>
+                <img src="../icons/download-svgrepo-com.svg" alt="preview" id="img-preview">
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./pop-up.js"></script>
+
+</body>
+
+</html>
