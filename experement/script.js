@@ -17,7 +17,7 @@ function previewImage(e) {
 
 function resetPreview() {
     const a = '../icons/download-svgrepo-com.svg';
-    document.getElementById("img-preview").setAttribute("src", a);
+    document.getElementById("img-preview").setAttribute("src", a)
 }
 
 function subForm(event) {
@@ -101,17 +101,22 @@ function delItem(arr) {
     let json = localStorage.getItem('image');
     let parse = JSON.parse(json)
     let res = parse.filter((item) => {
-        if (arr.imgUrl !== item.imgUrl && arr.title !== item.title) {
-            return item
+        if (arr.imgUrl === item.imgUrl && arr.title === item.title) {
+            return null
         }
+
+        return item
     })
     localStorage.setItem('image', JSON.stringify(res));
+    createGalery()
 }
 
 function createGalery() {
     let imgFromLs = localStorage.getItem('image');
     if (imgFromLs == null) {
     } else {
+        let x = document.querySelector('.main');
+        x.innerHTML = '';
 
         let parsedImgs = JSON.parse(imgFromLs);
         let res = parsedImgs.map((item) => {
